@@ -1,0 +1,29 @@
+:root {
+    --clr-primary: 52, 95, 246; // Blue
+    --clr-secondary: 94, 110, 133; // Dark Electric Blue
+    --clr-base: 37, 51, 71; // Gunmetal
+    --clr-light-900: 255, 255, 255; // Pure White
+    --clr-light-800: 216, 226, 231; // Borders
+
+    --fs-normal: 1rem;
+    --fs-xs: .875rem;
+    --fs-sm: 1.25rem;
+    --fs-md: 1.5rem;
+    --fs-lg: 3rem;
+    --fs-xl: 4rem;
+
+    --fw-semi-bold: 600;
+    --fw-regular: 400;
+
+    --lh-1: 1.1;
+    --lh-2: 1.5;
+
+    --spacing-normal: 1rem;
+    --spacing-xxs: 1.25rem;
+    --spacing-xs: 1.5rem;
+    --spacing-sm: 2rem;
+    --spacing-md: 4rem;
+    --spacing-lg: 6rem;
+    --spacing-xl: 7.25rem;
+    --spacing-xxl: 8rem;
+}

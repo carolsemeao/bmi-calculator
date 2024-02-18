@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: var(--fs-xl);
+}
+
+h2 {
+    font-size: var(--fs-lg);
+}
+
+h3 {
+    font-size: var(--fs-md);
+    margin-bottom: var(--spacing-xs);
+}
+
+h4 {
+    font-size: var(--fs-sm);
+    margin-bottom: 1.25rem;
+}
+
+h1, h2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+h1, h2, h3, h4 {
+    font-weight: var(--fw-semi-bold);
+    line-height: var(--lh-1);
+    margin-top: 0;
+    color: rgb(var(--clr-base));
+}
+
+body {
+    line-height: var(--lh-2);
+    color: rgb(var(--clr-secondary));
+}

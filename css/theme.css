@@ -1,0 +1,167 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+:root {
+  --clr-primary: 52, 95, 246;
+  --clr-secondary: 94, 110, 133;
+  --clr-base: 37, 51, 71;
+  --clr-light-900: 255, 255, 255;
+  --clr-light-800: 216, 226, 231;
+  --fs-normal: 1rem;
+  --fs-xs: .875rem;
+  --fs-sm: 1.25rem;
+  --fs-md: 1.5rem;
+  --fs-lg: 3rem;
+  --fs-xl: 4rem;
+  --fw-semi-bold: 600;
+  --fw-regular: 400;
+  --lh-1: 1.1;
+  --lh-2: 1.5;
+  --spacing-normal: 1rem;
+  --spacing-xxs: 1.25rem;
+  --spacing-xs: 1.5rem;
+  --spacing-sm: 2rem;
+  --spacing-md: 4rem;
+  --spacing-lg: 6rem;
+  --spacing-xl: 7.25rem;
+  --spacing-xxl: 8rem;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: var(--fs-xl);
+}
+
+h2 {
+  font-size: var(--fs-lg);
+}
+
+h3 {
+  font-size: var(--fs-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+h4 {
+  font-size: var(--fs-sm);
+  margin-bottom: 1.25rem;
+}
+
+h1, h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+h1, h2, h3, h4 {
+  font-weight: var(--fw-semi-bold);
+  line-height: var(--lh-1);
+  margin-top: 0;
+  color: rgb(var(--clr-base));
+}
+
+body {
+  line-height: var(--lh-2);
+  color: rgb(var(--clr-secondary));
+}
+
+form label {
+  display: block;
+  color: rgb(var(--clr-base));
+  font-weight: var(--fw-semi-bold);
+}
+form .form-group label {
+  margin-bottom: 0.5rem;
+  color: rgb(var(--clr-secondary));
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-regular);
+}
+form .input-group {
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid rgb(var(--clr-light-800));
+  border-radius: 0.75rem;
+}
+form input[type=number] {
+  padding: 0;
+  border: none;
+}
+form input[type=radio] {
+  color: rgb(var(--clr-base));
+}/*# sourceMappingURL=theme.css.map */
